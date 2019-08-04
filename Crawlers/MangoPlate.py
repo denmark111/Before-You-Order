@@ -21,7 +21,7 @@ driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/lib/chro
 driver.get(WEB_URL)
 
 # Below here is where crawling happens
-title = driver.find_element_by_class("title")
+title = driver.find_element_by_class_name("title")
 
 if title.is_displayed():
     print title
