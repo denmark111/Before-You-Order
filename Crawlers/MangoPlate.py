@@ -10,7 +10,7 @@ options.add_argument("disable-infobars")
 options.add_argument("--disable-extensions")
 
 # Path to Chrome binary
-options.set_binary("/usr/bin/chromium-browser")
+options.binary_location("/usr/bin/chromium-browser")
 
 # Driver for Chrome
 driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/lib/chromium-browser/chromedriver')
