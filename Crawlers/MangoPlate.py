@@ -19,4 +19,13 @@ driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/lib/chro
 # driver = webdriver.PhantomJS('/root/phantomjs-2.1.1-linux-x86_64/bin/phantomjs')
 
 driver.get(WEB_URL)
+
+# Below here is where crawling happens
+title = driver.find_element_by_class("title")
+
+if title.is_displayed():
+    print title
+
+print title
+
 driver.quit()
