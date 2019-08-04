@@ -9,6 +9,9 @@ options.add_argument("start-maximized")
 options.add_argument("disable-infobars")
 options.add_argument("--disable-extensions")
 
+# Path to Chrome binary
+options.set_binary("/usr/bin/chromium-browser")
+
 # Driver for Chrome
 driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/lib/chromium-browser/chromedriver')
 
@@ -17,4 +20,3 @@ driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/lib/chro
 
 driver.get(WEB_URL)
 driver.quit()
-
